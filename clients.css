@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir.ttc');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.jumbotron {
+  background-image: linear-gradient(
+    to right,
+    #776ce6,
+    #7c8ad0 82%,
+    #94a5d1 118%
+  );
+  color: white;
+}
+
+.jumbotron-container h1 {
+  font-size: 45px;
+  font-family: 'Avenir Black';
+}
+
+.jumbotron-container p {
+  font-family: 'Avenir Book';
+  font-size: 20px;
+}
+
+.clients-container img {
+  width: 100%;
+}
+
+.client-container {
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+  height: 100%;
+}
+
+.client-container h3 {
+  text-decoration: underline;
+  font-size: 20px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.clients-title-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Avenir Heavy';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.client-container:hover .clients-title-container {
+  transform: translateY(0);
+}

@@ -14,7 +14,15 @@
     #7c8ad0 82%,
     #94a5d1 118%
   );
+  border-radius: 0;
+}
+
+.jumbotron div {
   color: white;
+}
+
+.clients-container img {
+  width: 100%;
 }
 
 .jumbotron-container h1 {
@@ -27,24 +35,18 @@
   font-size: 20px;
 }
 
-.clients-container img {
-  width: 100%;
-}
-
 .client-container {
-  border-radius: 3px;
+  /* padding: 5px; */
   position: relative;
   overflow: hidden;
-  /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); */
   cursor: pointer;
-  height: 100%;
 }
 
 .client-container h3 {
   text-decoration: underline;
   font-size: 20px;
   position: absolute;
-  top: 200px;
+  top: 150px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -52,7 +54,6 @@
 
 .clients-title-container {
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 3px;
   color: #ffffff;
   font-size: 20px;
   font-family: 'Avenir Heavy';

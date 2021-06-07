@@ -8,15 +8,11 @@
 @font-face {
   font-family: 'AvenirHeavy';
   src: url('Avenir-Heavy.ttf');
-  /* font-weight: normal;
-  font-style: normal; */
 }
 
 @font-face {
   font-family: 'AvenirBook';
   src: url('Avenir-Book.ttf');
-  /* font-weight: normal;
-  font-style: normal; */
 }
 
 * {
@@ -44,7 +40,6 @@
 .jumbotron-container h1 {
   font-size: 45px;
   font-family: AvenirBlack;
-  /* font-weight: bold; */
 }
 
 .lead {
@@ -53,7 +48,6 @@
 }
 
 .client-container {
-  /* padding: 5px; */
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -86,4 +80,14 @@
 
 .client-container:hover .clients-title-container {
   transform: translateY(0);
+}
+
+@media only screen and (max-width: 576px) {
+  .lead {
+    font-size: 18px;
+  }
+
+  .jumbotron-container h1 {
+    font-size: 40px;
+  }
 }

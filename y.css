@@ -84,3 +84,43 @@
     font-size: 40px;
   }
 }
+
+.clients-container img {
+  width: 100%;
+  height: auto;
+}
+
+.client-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.client-container h3 {
+  text-decoration: underline;
+  font-size: 20px;
+  position: absolute;
+  top: 185px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.clients-title-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Avenir-Heavy';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.client-container:hover .clients-title-container {
+  transform: translateY(0);
+}
